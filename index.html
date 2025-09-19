@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CareerPathAI | AI Career Co-Pilot</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              'dark-purple-bg': '#200A24',
+              'dark-purple-card': '#321A37',
+              'dark-purple-card-border': '#441E4B',
+              'dark-purple-sidebar': '#2A132F',
+              'light-purple-text': '#E0DDEE',
+              'light-purple-text-muted': '#A09CB8',
+              'brand-purple': '#A78BFA',
+              'brand-purple-light': 'rgba(167, 139, 250, 0.1)',
+            },
+            keyframes: {
+               bounce: {
+                 '0%, 100%': {
+                    transform: 'translateY(-25%)',
+                    animationTimingFunction: 'cubic-bezier(0.8,0,1,1)'
+                 },
+                 '50%': {
+                    transform: 'none',
+                    animationTimingFunction: 'cubic-bezier(0,0,0.2,1)'
+                 }
+               }
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      @media print {
+        body * {
+          visibility: hidden;
+        }
+        #resume-preview, #resume-preview * {
+          visibility: visible;
+        }
+        #resume-preview {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          border: none !important;
+          box-shadow: none !important;
+        }
+        .no-print {
+            display: none;
+        }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.20.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "recharts": "https://aistudiocdn.com/recharts@^3.2.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-dark-purple-bg text-light-purple-text">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

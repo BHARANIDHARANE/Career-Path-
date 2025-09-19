@@ -1,0 +1,5 @@
+{
+  "name": "CareerPathAI",
+  "description": "An AI-powered career co-pilot that analyzes your resume to create a personalized dashboard, pre-fill a resume builder, and offer tailored skill diagnostics, job recommendations, and interview prep.",
+  "requestFramePermissions": []
+}
