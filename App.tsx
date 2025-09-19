@@ -1,5 +1,5 @@
 import React, { useState, createContext, useContext } from 'react';
-import Sidebar from './components/Sidebar';
+import Sidebar from './components/Sidebar.tsx';
 import Header from './components/Header';
 import Dashboard from './components/Dashboard';
 import ResumeAnalyzer from './components/ResumeAnalyzer';
